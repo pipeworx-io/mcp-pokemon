@@ -1,0 +1,66 @@
+[
+  {
+    "name": "get_pokemon",
+    "description": "Get stats, types, abilities, height, weight, and sprites for a Pokémon. Lookup by name (e.g., \"pikachu\") or ID (e.g., \"25\").",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Pokémon name (e.g., \"pikachu\") or numeric ID (e.g., \"25\")"
+        }
+      },
+      "required": [
+        "name"
+      ]
+    }
+  },
+  {
+    "name": "get_type",
+    "description": "Check type effectiveness matchups and find Pokémon by type (e.g., \"fire\", \"water\"). Returns damage chart and up to 20 Pokémon.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "Type name (e.g., \"fire\", \"water\", \"electric\")"
+        }
+      },
+      "required": [
+        "type"
+      ]
+    }
+  },
+  {
+    "name": "get_ability",
+    "description": "Look up a Pokémon ability (e.g., \"static\", \"overgrow\"). Returns effect description and all Pokémon that can have this ability.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "ability": {
+          "type": "string",
+          "description": "Ability name (e.g., \"overgrow\", \"blaze\", \"static\")"
+        }
+      },
+      "required": [
+        "ability"
+      ]
+    }
+  },
+  {
+    "name": "get_evolution_chain",
+    "description": "Trace a full evolution line by chain ID. Returns each stage with evolution triggers, level requirements, and items needed.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "number",
+          "description": "Evolution chain ID (e.g., 1 for Bulbasaur line, 10 for Caterpie line)"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    }
+  }
+]
