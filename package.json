@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-pokemon",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Pokemon MCP — wraps PokéAPI (free, no auth required)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "pokemon",
     "gatewaySlug": "pokemon",
-    "sourceHash": "v1-7c921ea7cdea51b6046f0fb1b9814ee36e745a7d42cfe190aeb149b0b3fda43b",
-    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
+    "sourceHash": "v1-f6b4fea320dc4cec6b0fd33ebb46b3c47f3243449fb6833a3f938bab57f315f7",
+    "sourceCommit": "243a06a6ca2d3b6075325f3b66a1468d0a2eb603"
   }
 }
